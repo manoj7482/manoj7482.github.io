@@ -11,15 +11,17 @@
             /* border: 1px solid; */
             display: flex;
             justify-content: space-between;
+            align-items: center;
             /* background-color: blueviolet; */
         }
 
-        div .links a {
+         .links a {
             /* border: 4px solid blue; */
             padding: 5px;
             text-decoration: none;
             color: blueviolet;
             font-weight: bold;
+            text-decoration: none;
         }
 
         #section-home {
@@ -42,6 +44,42 @@
         #section-home div:first-child {
             padding: 20px;
         }
+        #section-project{
+            margin: 20px;
+        }
+        .two-project {
+            display: flex;
+        }
+        .two-project>div{
+            width: 50%;
+            /* border: 2px solid; */
+            border-radius: 20px;
+            padding: 20px;
+            background-color: red;
+        }
+        .two-project img{
+            height: 300px;
+        }
+        .two-project div:first-child{
+            background-color: #5602a7;
+            /* margin: right 5px; ; */
+            margin-right: 5px;
+        }
+       .two-project div:last-child{
+        background-color: darkgoldenrod;
+        margin-left: 5px;
+       }
+       .third-project{
+        margin: 20px 0;
+        background-image: linear-gradient(to bottom right ,red,blue);
+        color: #fff;
+        padding: 20px;
+        border-radius: 15px;
+       }
+     .third-project img{
+        height: 400px;
+     }
+      
     </style>
 </head>
 
@@ -49,33 +87,16 @@
     <nav>
 
         <div>
-            <div>
-                <!DOCTYPE html>
-                <html lang="en">
-
-                <head>
-                    <meta charset="UTF-8">
-                    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                    <title>Document</title>
-                </head>
-
-                <body>
-
-                </body>
-
-                </html>
-            </div>
             <!-- img src="images/logo.png"alt=""> -->
             <img src="/images/logo.png" alt="" srcset="">
         </div>
-        <div>
+
             <div class="links">
                 <a href="section-home">Home</a>
                 <a href="section-project">Project</a>
                 <a href="section-contact">Contact</a>
             </div>
-        </div>
+   
     </nav>
     <section id="section-home">
         <div>
@@ -86,8 +107,9 @@
             <img src="/images/WhatsApp Image 2023-02-11 at 12.11.13.jpg" alt="">
         </div>
     </section>
-    <section id="=section-project">
-        <div>
+    <section id="section-project">
+
+        <div class="two-project">
             <div>
                 <h1>Paymento</h1>
                 <p>personal Finance mobile app</p>
@@ -100,15 +122,16 @@
 
             </div>
         </div>
-        <div>
+        <div class="third-project"> 
             <h1>
                 Piyuu
             </h1>
             <p>Freelancing platform for individual</p>
-                    <img src="/images/piyuu.png" alt="">
+            <img src="/images/piyuu.png" alt="">
         </div>
 
     </section>
+
 </body>
 
 </html>
